@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0%;
+            margin: 0%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .con {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .imgsec {
+            padding-top: 120px;
+        }
+
+        .login {
+
+            height: 540px;
+            width: 350px;
+            margin-left: 90px;
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+        }
+
+        .login>.logo {
+            height: 60px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }
+
+        .create {
+            height:40px;
+            width:100% ;
+            align-content:center;
+        }
+
+
+        .username {
+            height: 40px;
+            width: 100%;
+        }
+
+        .username>input {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }
+
+        .password {
+            height: 40px;
+            width: 100%;
+        }
+
+        .password>input {
+            width: 100%;
+            border-radius: 5px;
+            height: 100%;
+        }
+
+        .enter {
+            height: 40px;
+            width: 100%;
+        }
+
+        .enter>button {
+            background-color: #4A5DF9;
+            color: aliceblue;
+            border-radius: 25px;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .or {
+            height: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .facebook {
+            height: 50px;
+            width: 100%;
+            color: blue;
+            background-color: aliceblue;
+            font-size: large;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .facebook>i {
+            color: blue;
+            font-size: 60px;
+            height: 50px;
+        }
+
+        .forgot {
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .create {
+            height: 90px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .create>span {
+            color: blue;
+        }
+
+        .para {
+    
+            height: 80px;
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .para>ul {
+            list-style: none;
+            display: flex;
+            font-size: small;
+            width: 75%;
+              justify-content: center;
+            align-items: center;
+        }
+        .para>ul>li{ width: 70%;
+            display : flex;
+          justify-content: center;
+        gap: 0px;}
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <div class="imgsec"><img src="./landing-2x.png" alt=""></div>
+
+        <div class="login">
+            <div class="logo"><img src="./H_-3Vh0lHeK.png" alt=""></div><br>
+
+            <div class="allstuff">
+                <div class="username"><input type="text" placeholder="username " id="user"></div><br>
+                <div class="password"><input type="password" placeholder="password" id="pass"></div><br>
+                <div class="enter"><button onclick="checker()"><b>Log in</b></button></div><br>
+                <div class="or"> OR</div><br>
+                <div class="facebook">
+                    <p><span><i class="fa-brands fa-facebook"></i><b>log in with facebook</b></p>
+                </div><br>
+                <div class="forgot"><b>Forgot password?</b> </div><br>
+            </div allstuff>
+
+            <div class="create">Don't have an account?<span><b>Sign up</b></span></div>
+        </div login>
+    </div>
+    <div class="para">
+        <ul>
+            <li>Meta</li>
+            <li>Blog</li>
+            <li>About</li>
+            <li>Jobs</li>
+            <li>Help</li>
+            <li>API</li>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Locations</li>
+            <li>Instagram Lite</li>
+            <li>Meta AI </li>
+            <li>Meta AI </li>
+            <li>Threads </li>
+            <li>Contact</li>
+            <li>Meta Verified </li>
+        </ul>
+    </div>
+    <script>
+        let username="sunshine"
+        let password="12345"
+
+let user=document.getElementById("user")
+let pass=document.getElementById("pass")
+function checker(){ 
+    if( user.value==username&&password==pass.value)
+{ alert( "login sucessfull")}
+else{ alert("invalid username or password ")}
+}
+    </script>
+</body>
+
+</html>
